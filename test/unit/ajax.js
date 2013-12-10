@@ -608,6 +608,7 @@ module( "ajax", {
 		ok( jQuery.get( url(target), success ), "get" );
 		ok( jQuery.post( url(target), success ), "post" );
 		ok( jQuery.getScript( url("data/test.js"), success ), "script" );
+		ok( jQuery.getCSS( url("data/testsuite.css"), success ), "css" );
 		ok( jQuery.getJSON( url("data/json_obj.js"), success ), "json" );
 		ok( jQuery.ajax({
 			url: url( target ),

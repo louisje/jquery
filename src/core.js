@@ -302,6 +302,19 @@ jQuery.extend({
 		}
 	},
 
+	// Apply CSS
+	globalStyle: function( css ) {
+		var style;
+
+		css = jQuery.trim( css );
+
+		if ( css ) {
+			style = document.createElement("style");
+			style.text = css;
+			document.head.appendChild( style );
+		}
+	},
+
 	// Convert dashed to camelCase; used by the css and data modules
 	// Microsoft forgot to hump their vendor prefix (#9572)
 	camelCase: function( string ) {

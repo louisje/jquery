@@ -771,6 +771,10 @@ jQuery.extend({
 		return jQuery.get( url, data, callback, "json" );
 	},
 
+	getCSS: function( url, callback ) {
+		return jQuery.get( url, undefined, callback, "css" );
+	},
+
 	getScript: function( url, callback ) {
 		return jQuery.get( url, undefined, callback, "script" );
 	}
